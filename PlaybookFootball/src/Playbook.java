@@ -1,6 +1,9 @@
 import java.awt.EventQueue;
 
 import javax.swing.JFrame;
+import java.awt.FlowLayout;
+import javax.swing.JPanel;
+import javax.swing.BoxLayout;
 
 public class Playbook {
 
@@ -36,6 +39,14 @@ public class Playbook {
 		frame = new JFrame();
 		frame.setBounds(100, 100, 450, 300);
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		frame.getContentPane().setLayout(null);
+		
+		JPanel panel_draw = new JPanel();
+		panel_draw.setBounds(12, 12, 285, 246);
+		frame.getContentPane().add(panel_draw);
+		
+		JPanel panel_selection = new JPanel();
+		panel_selection.setBounds(309, 12, 127, 246);
+		frame.getContentPane().add(panel_selection);
 	}
-
 }
